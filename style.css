@@ -59,6 +59,11 @@ input::placeholder {
   margin-right: 1rem;
 }
 
+.avatars img:last-child,
+.avatar_contacts img {
+  margin-right: 0;
+}
+
 .about {
   text-align: center;
   padding: 1rem;
@@ -93,12 +98,47 @@ input::placeholder {
   margin: 0.4rem 0;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 70%;
+@media (min-width: 1024px) {
+  .container,
+  .avatars {
+    max-width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+  }
+
+  #slideshow {
+    min-height: 70vh;
+  }
+
+  .avatars img {
+    margin-top: -10rem;
+    width: 20rem;
+  }
+
+  .about {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .avatar_contacts {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+  }
+
+  .avatar_contacts img {
+    width: 12rem;
+  }
+
+  #avatar_gap {
+    margin-left: 15rem;
+  }
+
+  #avatar_info {
+    padding-left: 1rem;
   }
 }

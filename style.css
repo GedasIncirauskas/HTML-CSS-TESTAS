@@ -114,7 +114,7 @@ input::placeholder {
 
   .avatars img {
     margin-top: -10rem;
-    width: 20rem;
+    max-width: 20rem;
   }
 
   .about {
@@ -140,5 +140,9 @@ input::placeholder {
 
   #avatar_info {
     padding-left: 1rem;
+  }
+
+  .footer_menu a:hover {
+    text-decoration: underline;
   }
 }
